@@ -28,6 +28,7 @@ public class TrainSensorImpl implements TrainSensor {
 
 	public void issue() {
 		System.out.println("Issue a");
+		System.out.println("Issue b");
 	}
 
 }
