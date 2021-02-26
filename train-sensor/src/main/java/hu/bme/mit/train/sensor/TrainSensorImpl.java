@@ -26,4 +26,8 @@ public class TrainSensorImpl implements TrainSensor {
 		controller.setSpeedLimit(speedLimit);
 	}
 
+	public void issue() {
+		System.out.println("Issue");
+	}
+
 }
