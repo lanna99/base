@@ -14,9 +14,9 @@ public class TachographTest {
 
     @Test
     public void test() {
-        tachograph.addEntry(new Date(System.currentTimeMillis()), 0.4f, 0.6f);
-        tachograph.addEntry(new Date(System.currentTimeMillis()), 0.2f, 0.16f);
+        tachograph.put(new Date(System.currentTimeMillis()), 0.4f, 0.6f);
+        tachograph.put(new Date(System.currentTimeMillis()), 0.2f, 0.16f);
 
-        Assert.assertEquals(2, tachograph.getSize());
+        Assert.assertEquals(2, tachograph.size());
     }
 }
